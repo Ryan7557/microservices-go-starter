@@ -55,6 +55,10 @@ func main() {
 
 	publisher := events.NewTripEventPublisher(rabbitmq)
 
+	// Start the driver consumer
+	driverConsumer := events.NewDriverConsumer(rabbitmq, svc)
+	go driverConsumer.Listen()
+
 	// Starting the grpc server
 	grpcServer := grpcserver.NewServer()
 	grpc.NewGRPCHandler(grpcServer, svc, publisher)

@@ -1,6 +1,0 @@
-./http.go
-./json.go
-./main.go
-./middleware.go
-./types.go
-./ws.go

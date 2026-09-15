@@ -1,4 +1,0 @@
-./connection_manager.go
-./events.go
-./queue_consumer.go
-./rabbitmq.go

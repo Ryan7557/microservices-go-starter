@@ -1,6 +1,0 @@
-{
-  "recommendations": [
-    "EditorConfig.editorconfig", // default
-    "golang.go" // rich language support
-  ]
-}
